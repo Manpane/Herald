@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: 
+
+User-agent: *
+Allow: /portfolio.html
+Allow: /fb_logo.png
+Allow: /youtube_logo.png
+Allow: /gmail_logo.png
+Allow: /github_logo.png
+
+Disallow: /style.css
