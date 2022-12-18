@@ -1,0 +1,16 @@
+.external h1{
+    color: rgb(223, 182, 182);
+    background-color: rgb(210, 150, 76);
+    transition: 800ms all ease;
+}
+.external h1:hover{
+    transform: scale(1.02,1.02);
+}
+.external p::selection{
+    background-color: rgb(42, 15, 68);
+    color: rgb(148, 144, 137);
+}
+.external p{
+    background-color: rgb(242, 157, 46);
+    color: white;
+}

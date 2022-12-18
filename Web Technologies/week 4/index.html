@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demo</title>
+    <style>
+        .internal h1{
+            color: brown;
+            background-color: bisque;
+            transition: 500ms all ease;
+        }
+        .internal h1:hover{
+            transform: scale(1.02,1.02);
+        }
+        .internal p::selection{
+            background-color: blueviolet;
+            color: wheat;
+        }
+        .internal p{
+            background-color: antiquewhite;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="border: 2px solid red;background-color: aqua;font-family: sans-serif;">This is done by inline CSS.</h1>
+    <br><br>
+    <div class="internal">
+        <h1>Internal CSS</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime rem fuga, eaque at obcaecati amet omnis provident architecto minus accusamus perferendis enim nisi accusantium quas magnam consequatur officiis fugiat dignissimos!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti quibusdam explicabo earum! Modi ducimus harum quam natus rerum pariatur ratione neque provident est adipisci, quidem illum reprehenderit praesentium aliquid.
+        </p>
+    </div>
+
+    <br><br>
+    <div class="external">
+        <h1>External CSS</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime rem fuga, eaque at obcaecati amet omnis provident architecto minus accusamus perferendis enim nisi accusantium quas magnam consequatur officiis fugiat dignissimos!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti quibusdam explicabo earum! Modi ducimus harum quam natus rerum pariatur ratione neque provident est adipisci, quidem illum reprehenderit praesentium aliquid.
+        </p>
+    </div>
+
+</body>
+</html>
