@@ -1,0 +1,75 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+}
+.container .containerelement{
+    min-height: 100vh;
+    width: 50%;
+    max-width: 50vw;
+}
+.container .text{
+    padding: 2%;
+    background-color: rgb(12,59,46);
+}
+.container .text .title-main{
+    color: aliceblue;
+    font-size: 3em
+}
+.container .text .sub-title{
+    color: rgba(240, 248, 255, 0.738);
+    font-size: 1.2em;
+    margin-bottom: 10%;
+}
+.container .text .description{
+    color: rgba(240, 248, 255, 0.738);
+    font-size: 1em;
+    margin-bottom: 20%;
+}
+.container .image img{
+    width: 100%;
+    max-width: 50vw;
+    height: auto;
+}
+.container .text button{
+    
+    background-color: rgb(255,186,0);
+    font-weight: bolder;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    cursor: pointer;
+    border-color: transparent;
+
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: all 500ms;
+}
+
+.container .text button:hover{
+    color: rgb(255,186,0);
+    background-color: black;
+}
+@media screen and (max-width:768px){
+    .container{
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .containerelement{
+        min-width: 100vw;
+    }
+    .container .text{
+        padding: 10%;
+    }
+}

@@ -1,0 +1,5 @@
+Devices               Min Width                  Max Width
+Mobile                  329px                       480px
+Tablet                  481px                       768px
+Laptop                  769px                       1024px
+Desktop                 1025px                      1200px
