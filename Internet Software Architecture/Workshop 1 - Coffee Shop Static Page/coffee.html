@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <span>The New Coffee</span>
+            <img src="./coffee_cup.jpg" alt="Coffee cup" id="logo">
+        </div>
+        <div class="menu">
+            <a href="#about" class="menu-item">About</a>
+            <a href="#ingredients" class="menu-item">Ingredients</a>
+            <a href="#price" class="menu-item">Price</a>
+            <a href="#contact" class="menu-item">Contact</a>
+            <a href="#order" class="menu-item">Order</a>
+        </div>
+    </nav>
+    <main>
+        <img src="./background.jpg" alt="Coffee background" id="coffee-background">
+        <div id="about">
+            <h1>About our product</h1>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, dolor doloribus ea
+                numquam nesciunt reprehenderit qui dolorum? Fuga voluptates nulla sint aliquid.
+                Dolore sed voluptatem a sint accusamus excepturi laboriosam.
+            </p>
+            
+        </div>
+        <hr>
+        <div id="ingredients">
+            <h1 class="btn">Ingredients</h2>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, dolor doloribus ea
+                numquam nesciunt reprehenderit qui dolorum? Fuga voluptates nulla sint aliquid.
+                Dolore sed voluptatem a sint accusamus excepturi laboriosam.
+            </p>
+            <ul>
+                <li>Coffee Beans</li>
+                <li>Fixed oil</li>
+                <li>High Quality Milk</li>
+                <li>Sugar</li>
+            </ul>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, dolor doloribus ea
+                numquam nesciunt reprehenderit qui dolorum? Fuga voluptates nulla sint aliquid.
+                Dolore sed voluptatem a sint accusamus excepturi laboriosam.
+            </p>
+        </div> 
+        <form id="contact" action="post">
+            <h2>Contact us here</h2>
+            <input required type="email" placeholder="Your email">
+            <input required type="text" placeholder="Your name">
+            <textarea required placeholder="Your message for us ..."
+                name="contact-message-field"
+                id="contact-message-field"
+                cols="30" rows="10"></textarea>
+            <input type="submit" value="Leave message">
+        </form>
+    </main>
+    <footer>
+        <span>@Copyright All rights reserved</span>
+    </footer>
+</body>
+</html>

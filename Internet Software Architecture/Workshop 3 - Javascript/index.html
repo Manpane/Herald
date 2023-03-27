@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Layout 4</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-item text upper">
+            <h1 class="big heading heading1">
+                The most awaited <br>e-commerce event is back!
+            </h1>
+            <p class="heading heading3">Every year, thousands of marketing, sales, and web development professionals gather in and around Venston Bay to discuss the future of e-commerce.</p>
+        </div>
+        <div class="container-item image">
+            <img src="photo.jpg" alt="office photo">
+        </div>
+    </div>
+    <script>        
+        function some_function(){
+            console.log("Inside a function.")
+        }
+        //arrow function
+        some_function = () => {
+            console.log("Inside a function.")
+        }
+
+        //Immediately Invoked Function
+        (function print(){
+            console.log("Hello")
+        })();
+
+        //Fetch
+        fetch("https://manoj9898.pythonanywhere.com/WVMP_IPS")
+        .then(response=>response.json())
+        .then(data=>{
+            console.log(data);
+            console.log("Successfully fetched data from api.");
+        });
+    </script>
+</body>
+</html>

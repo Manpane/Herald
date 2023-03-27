@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+*{
+    font-family: 'Comic Neue', cursive;
+    margin: 0;
+    padding: 0;
+}
+@keyframes leftnav-anim {
+    0%{
+        margin-left: -200px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+@keyframes elemHover {
+    0%{
+        background-color:rgba(10, 20, 50, 0.146) ;
+        border-radius: 100%;
+    }
+    50%{
+        background-color:rgba(20, 20, 20, 0.546) ;
+        border: 2px solid rgba(0, 0, 0, 0.305);
+        border-radius: 5%;
+    }
+    100%{
+        background-color:rgba(50, 20, 10, 0) ;
+        border: 2px solid rgba(0, 0, 0, 0);
+        border-radius: 1%;
+    }
+}
+@keyframes contentload {
+    0%{
+        margin-top: -200px;
+    }
+    100%{
+        margin-top: 1%;
+    }
+}
+header{
+    background-image: linear-gradient(45deg,rgba(80, 103, 234, 0.686),rgba(80, 103, 234, 0.482)) ;
+}
+header ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+header #ad-banner p{
+    text-align: center;
+    align-content: center;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    background-image: url("../images/background-pc.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+main #left-nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(95, 158, 160, 0.453);
+    max-width: 200px;
+    height: 100vh;
+    animation: leftnav-anim 800ms ease-out;
+}
+main #left-nav h1{
+    font-size: 1.7em;
+    color: rgb(255, 189, 109);
+    border: 2px solid transparent;
+}
+main #left-nav h1:hover{
+    color: rgb(255, 189, 109);
+    animation: elemHover 1500ms ease;
+}
+main #left-nav ol{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: left;
+    justify-content: space-between;
+    color: rgb(178, 255, 100);
+}
+main #left-nav ol li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: calc(100%+20px);
+    margin-top: 4%;
+    margin-bottom: 4%;
+    transition: all 300ms;
+}
+main #left-nav ol li:hover{
+    background-color: rgba(51, 76, 77, 0.234);
+}
+main #left-nav ol .current a{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgb(206, 255, 8);
+}
+main #left-nav ol li a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(220, 233, 169);
+}
+main #content{
+    margin-left: 15%;
+    margin-top: 1%;
+    animation: contentload 800ms ease;
+}
+main #content li{
+    list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        background-image: url("../images/background-mobile.jpg");
+    }
+    main #left-nav{
+        min-width: 100vw;
+        overflow-x: scroll;
+        align-items: center;
+    }
+  }

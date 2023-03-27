@@ -1,0 +1,125 @@
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: radial-gradient(at top,rgb(139, 85, 19),rgba(139, 85, 19, 0.321));
+    min-height: 100vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 5%;
+}
+.logo span{
+    font-size: 2vw;
+    margin-right: 10px;
+}
+#logo{
+    width: 15vmin;
+    height:15vmin;
+    max-width: 60px;
+    max-height: 60px;
+    border-radius:30px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(144, 115, 81);
+    align-items: center;
+    overflow-x: scroll;
+    padding: 30px 0px;
+}
+nav .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:0px 10px;
+}
+nav .menu .menu-item{
+    text-decoration: none;
+    font-size: 1.7vw;
+    transition: 500ms all ease;
+    height: 100%;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 3px solid transparent;
+}
+#coffee-background{
+    width: 100vw;
+    height: auto;
+    text-align: left;
+}
+nav .menu .menu-item:hover{
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    transform: rotate(1deg);
+}
+nav .menu .menu-item:hover > ::before{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    background-color: rgba(168, 176, 12, 0.577);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(51, 50, 50);
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+form input{
+    width: 80%;
+    margin: 5%;
+    background-color: rgba(40, 37, 37, 0.374);
+    color: whitesmoke;
+    padding: 10px 15px;
+    
+}
+input::placeholder{
+    color: rgba(245, 245, 245, 0.615) ;
+}
+form textarea{
+    width: 80%;
+    margin: 5%;
+    background-color: rgba(40, 37, 37, 0.374);
+    color: whitesmoke;
+    padding: 10px 15px;
+    max-width: 90%;
+    max-height: 200px;
+    
+    
+}
+textarea::placeholder{
+    color: rgba(245, 245, 245, 0.615) ;
+}
+form input[type="submit"]{
+    border-radius: 5px;
+    background-color: rgb(19, 170, 175);
+    color: azure;
+    cursor: pointer;
+    border: none;
+    transition: all 500ms ease;
+}
+form input[type="submit"]:hover{
+    border-radius: 10px;
+    background-color: rgb(14, 20, 21);
+    color: rgb(0, 247, 255);
+}
+#contact form{
+    float: right;
+}
