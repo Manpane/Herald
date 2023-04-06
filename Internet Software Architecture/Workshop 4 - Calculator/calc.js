@@ -124,3 +124,5 @@ document.querySelectorAll("button").forEach(e=>bindOnClick(e));
 
 //Setting the calculator to initial state.
 clear()
+
+

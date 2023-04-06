@@ -55,3 +55,10 @@ binary = (num) => {
 	}
 	return bits
 }
+
+
+a = [1,2,34,5];
+b = a.reduce(function (elem){
+	return elem+5;
+})
+console.log(b)
